@@ -6,43 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Luis Rodríguez</title>
   </head>
   <body>
     <!-- Navbar -->
-    <header>
-      <nav class="navContainer">
-        <a href="https://rodriguezfallasluis.com/" class="nav-logo">
-          <img src="./img/logo.svg" class="logo" alt="logo" />
-        </a>
-        <ul id="menu">
-          <li>
-            <a href="https://rodriguezfallasluis.com/" target="_self"
-              >About me</a
-            >
-          </li>
-          <li>
-            <a href="https://rodriguezfallasluis.com/blog" target="_self"
-              >Blog</a
-            >
-          </li>
-          <li>
-            <a href="https://rodriguezfallasluis.com/portfolio" target="_self"
-              >Portfolio</a
-            >
-          </li>
-          <li>
-            <a href="https://rodriguezfallasluis.com/contact" target="_self"
-              >Contacto</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="top-nav">
+      <a href="https://rodriguezfallasluis.com/" class="nav-logo">
+        <img src="./img/logo.svg" class="logo" alt="logo" />
+      </a>
+      <input id="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <label class="menu-button"></label>
+      </label>
+      <ul class="menu">
+        <a href="https://rodriguezfallasluis.com/" target="_self"
+          ><li>About me</li></a
+        >
+        <a href="https://rodriguezfallasluis.com/blog" target="_self"
+          ><li>Blog</li></a
+        >
+        <a href="https://rodriguezfallasluis.com/portfolio" target="_self"
+          ><li>Portfolio</li></a
+        >
+        <a href="https://rodriguezfallasluis.com/contact" target="_self"
+          ><li>Contact</li></a
+        >
+      </ul>
     </header>
 
     <!-- Main container -->
     <main class="container">
-      <h1 class="title"><span>My</span> Animations</h1>
+      <h1 class="title animate__animated animate__fadeIn">
+        <span>My</span> Animations
+      </h1>
       <!-- First objective section -->
       <section>
         <p>
@@ -50,7 +56,9 @@
           exercises applied in this module.
         </p>
         <br />
-        <h3 class="subTitle">1) Objective:</h3>
+        <h3 class="subTitle animate__animated animate__backInLeft">
+          1) Objective:
+        </h3>
         <br />
         <p>
           The first exercise is about to create an animation with at least three
@@ -114,36 +122,39 @@
       </section>
       <!-- Second objective section -->
       <section>
-        <h3 class="subTitle">2) Objective:</h3>
+        <h3 class="subTitle animate__animated animate__backInLeft">
+          2) Objective:
+        </h3>
         <p>
-          En este objectivo es la construcción de una animación utilizando el
-          tema asignado por el profesor. En mi caso el tema es sobre la venta de
-          zapatos de una tienda. Puntos a evaluar: 1) El resultado debe ser
-          atractivo según el publico meta, 2) La animacion debe incorporar un
-          CTA.
+          In this objective is the construction of an animation using the theme assigned by the teacher. In my case the topic is about the sale of shoes from a store. Points to evaluate:
         </p>
+        <ul class="list">
+          <li>1) The result must be attractive according to the target audience.</li>
+          <li>2) The animation must incorporate a CTA.</li>
+        </ul>
         <br />
-        <img src="./img/BannerShoes.gif" alt="ad" />
+        <article class="containerShoes">
+          <img class="img-shoes" src="./img/BannerShoes.gif" alt="ad" />
+        </article>
         <br />
         <h3 class="subTitle">Challenge:</h3>
         <br />
         <p>
-          Para este project no tuve mucha dificulta en realizarlo, la manera en
-          la que lo trabaje me dio la ventaja de hacer lo armonioso e incorporar
-          todos los elementos solicitados como el CTA
+          The hardest thing was working with the time of each object.
         </p>
         <br />
         <h3 class="subTitle">Technologies:</h3>
         <br />
         <p>
-          For this project, Las tecnologia usadas fueron html, CSS, Illustrator
-          para crear el fondo del banner.
+          For this project, I used the following technologies to make the website: Html, CSS, and Illustrator to create the design of the banner.
         </p>
         <br />
       </section>
       <!-- Third objective section -->
       <section>
-        <h3 class="subTitle">3) Objective:</h3>
+        <h3 class="subTitle animate__animated animate__backInLeft">
+          3) Objective:
+        </h3>
         <br />
         <p>
           In this case, the objective is to create a web banner with Html and
@@ -164,25 +175,25 @@
           <article class="content">
             <p>The popular sizes are:</p>
             <ul class="listBanners">
-              <li>300x250 pixel medium rectangle.</li>
-              <li>728x90 pixel leaderboard banner.</li>
               <li>160x600 pixel wide skyscraper.</li>
+              <li>300x250 pixel medium rectangle.</li>
               <li>320x50 pixel mobile leaderboard.</li>
+              <li>728x90 pixel leaderboard banner.</li>
             </ul>
             <br />
             <p>And then, these others banners as standard ad sizes:</p>
             <ul class="listBanners">
+              <li>120x600 pixel vertical banner.</li>
+              <li>125x125 pixel button.</li>
+              <li>180x150 pixel small rectangle.</li>
+              <li>234x60 pixel half banner.</li>
+              <li>250x250 pixel small square.</li>
               <li>300x600 pixel half-page ad.</li>
-              <li>970x250 pixel billboard.</li>
+              <li>300x1050 pixel portrait.</li>
               <li>336x280 pixel large rectangle.</li>
               <li>468x60 pixel banner.</li>
-              <li>234x60 pixel half banner.</li>
-              <li>120x600 pixel vertical banner.</li>
-              <li>300x1050 pixel portrait.</li>
               <li>970x90 pixel large leaderboard.</li>
-              <li>250x250 pixel small square.</li>
-              <li>180x150 pixel small rectangle.</li>
-              <li>125x125 pixel button.</li>
+              <li>970x250 pixel billboard.</li>
             </ul>
           </article>
           <aside id="banner">
@@ -230,16 +241,14 @@
         <h3 class="subTitle">Challenge:</h3>
         <br />
         <p>
-          Para este project no tuve mucha dificulta en realizarlo, la manera en
-          la que lo trabaje me dio la ventaja de hacer lo armonioso e incorporar
-          todos los elementos solicitados como el CTA
+          In this project the most difficult thing was the animation of the
+          pet's legs in css.
         </p>
         <br />
         <h3 class="subTitle">Technologies:</h3>
         <br />
         <p>
-          For this project, Las tecnologia usadas fueron html, CSS, Illustrator
-          para crear el fondo del banner.
+          For this project, I used the following technologies to make the website: HTML and CSS.
         </p>
       </section>
     </main>
